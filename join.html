@@ -1,0 +1,209 @@
+<!-- {% extends 'base.html' %}
+{% block joinactive %}active{% endblock joinactive %}
+{% block css %} -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" src="/static/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>fOSS</title>
+    <!-- JS -->
+    <script src="https://use.fontawesome.com/f2a667ce23.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style>
+        .container {
+        		min-height: 120vh;
+        }
+        body {
+  				font-family: 'Varela Round', sans-serif;;
+ 		 		padding: 0;
+ 		 		margin: 0;
+		}
+		p {
+  				font-size: 15px;
+  				font-family: 'Varela Round', sans-serif;
+		}
+		h2 {
+  				/*font-size: 15px;*/
+  				font-family: 'Varela Round', sans-serif;
+		}
+		/*nav{
+  				width: 100%;
+  				margin: 0 auto;
+  				background: #000;
+  				padding: 30px 0;
+  				box-shadow: 0px 5px 0px #dedede;
+		}*/
+		a.navbar-brand {
+  				font-family: 'Ubuntu', sans-serif;
+		}
+		nav li {
+  				font-size: 15px;
+		}
+
+		nav ul {
+  				list-style: none;
+  				text-align: center;
+		}
+		a.nav-link
+		{
+    			position: relative;
+		}
+		a.nav-link:hover {
+  				color: #fff;
+		}
+		a.nav-link:before {
+  				content: "";
+  				position: absolute;
+  				width: 100%;
+  				height: 2px;
+  				bottom: 0;
+  				left: 0;
+  				background-color: #FFF;
+  				visibility: hidden;
+  				transform: scaleX(0);
+  				transition: all 0.3s ease-in-out;
+		}
+		a.nav-link:hover:before {
+  				visibility: visible;
+  				transform: scaleX(1);
+		}
+		.dev-tag {
+  				font-family: 'Varela Round', sans-serif;
+		}
+		.title {
+  				position: absolute;
+  				color: #fff;
+  				/*margin-left: 160px;
+  				padding: 78px;*/
+  				font-style: bold;
+ 				font-weight: 100;
+ 				font-family: 'Varela Round', sans-serif;
+		}
+    h1 {
+      font-weight:bold;
+    }
+    .title-tit {
+        font-weight: bold;
+        font-family: 'ubuntu', sans-serif;
+        font-size: 50px;
+    }
+@media screen and (max-width: 600px) {
+	.title-tit {
+		padding-left: 3rem !important;
+		margin-left: 3rem !important;
+	}
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color:#dbdbdc;
+  }
+  .title-tit {
+        color: #dbdbdc;
+        font-weight: bold;
+        font-family: 'ubuntu', sans-serif;
+        font-size: 50px
+  }
+  .form-control {
+      color: #dbdbdc;
+      background-color: #252a33;
+  }
+  .form-control:focus {
+        color: #dbdbdc;
+        background-color: #252a33;
+        border-color: #dbdbdc;
+        box-shadow: none !important;
+  }
+  .custom-select{
+      color: #dbdbdc;
+      background: #252a33 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+  }
+  .custom-select:focus {
+      border-color: #dbdbdc;
+      outline: 0;
+      box-shadow: none !important;
+  }
+    .value {
+        color:white
+    }
+    .selected {
+        color: #767f71;
+    }
+    .custom-control-input:focus {
+        border-color: #dbdbdc;
+      outline: 0;
+      box-shadow: none !important;
+    }
+}
+</style>
+<!-- {% endblock css %}
+{% block head %} -->
+</head>
+<title>Join Us - DevLogs</title>
+<!-- {% endblock head %}
+{% block body %} -->
+<body>
+<div class="container">
+<p class="title-tit py-5">Join Us </p><hr class="px-5 mx-5"><br>
+<form action="/join/" method="POST">
+<!-- {% csrf_token %} -->
+  <div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your Email ID"aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <label for="mob">Mobile Number</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">+91</div>
+    </div>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Mobile Number">
+  </div><p></p>
+  <div class="form-group">
+    <label for="desc">Message</label>
+    <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+  </div>
+  <hr class="px-5"><br>
+  <form class="form-inline">
+  <label class="check my-1 mr-2" for="inlineFormCustomSelectPref">Want to Join as a </label>
+  <select class="custom-select my-1 mr-sm-2" name="position" id="position">
+    <option selected>Available Positions</option>
+    <option value="Blogger">Blogger</option>
+    <option value="Graphic Designer">Graphic Designer</option>
+    <option value="Web Developer">Web Developer</option>
+  </select><p></p><p></p>
+    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+    <input type="checkbox" class="custom-control-input" id="customControlInline">
+    <label class="custom-control-label" for="customControlInline">Yes, i want to Join DevLogs</label>
+  </div><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
+<br><br><br>
+</body>
+<!-- {% endblock body %} -->
